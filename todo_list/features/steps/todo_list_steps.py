@@ -1,7 +1,6 @@
 from behave import given, when, then
 import sys
-sys.path.append(r'C:\Users\andre\Documents\GitHub\AcceptanceTestingIS2')  # Adjust the path accordingly
-
+sys.path.append(r'C:\Users\andre\Documents\GitHub\AcceptanceTestingIS2')  
 from todo_list.app import TodoList
 
 
