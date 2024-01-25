@@ -7,6 +7,13 @@ class TodoList:
 
     def get_tasks(self):
         return [(task["name"], task["status"]) for task in self.tasks]
+    
+    def get_task_status(self, task_name):
+        for task in self.tasks:
+            if task["name"] == task_name:
+                status = task["status"]
+                return status
+
 
     def mark_task_completed(self, task_name):
         for task in self.tasks:
